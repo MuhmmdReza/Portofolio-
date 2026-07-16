@@ -720,4 +720,10 @@ padding:25px;
 font-size:34px;
 }
 
+.hero-right .profile-card img{
+    width:180px !important;
+    height:180px !important;
+    object-fit:cover !important;
+    border-radius:50% !important;
+    display:block;
 }
