@@ -12,15 +12,25 @@ window.addEventListener("load", () => {
 
 
     // Intro video
-    const video = document.getElementById("introVideo");
+const video = document.getElementById("introVideo");
 
-    if(video){
-        video.onended = () => {
-            if(intro){
-                intro.style.display = "none";
-            }
-        };
-    }
+if(video){
+
+    // paksa video mulai otomatis
+    video.play().catch(function(error){
+        console.log("Autoplay gagal:", error);
+    });
+
+
+    video.onended = () => {
+
+        if(intro){
+            intro.style.display = "none";
+        }
+
+    };
+
+}
 
 });
 
