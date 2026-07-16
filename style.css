@@ -293,6 +293,27 @@ display:flex;
 gap:20px;
 
 }
+.hero-right{
+width:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.profile-card{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.profile-card img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #00d5ff;
+box-shadow:0 0 30px #00d5ff;
+}
 
 .btn1,.btn2{
 
